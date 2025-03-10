@@ -10,7 +10,7 @@
             $this->qtd_moradores = $qtd_moradores;
             $this->endereco = $endereco;
             $this->aluguel = $aluguel;
-            print nl2br("Condomínio Registrado");
+            print nl2br("\n"."Condomínio Registrado");
         }
         
         public function Get_sindico(){return $this->sindico;}
@@ -44,12 +44,12 @@
         private $faturamentos;
 
 
-        public __construct($nome,$endereco,$qtd_funcionarios,$faturamentos){
+        public function __construct($nome,$endereco,$qtd_funcionarios,$faturamentos){
             $this->nome = $nome;
             $this->endereco = $endereco;
             $this->qtd_funcionarios = $qtd_funcionarios;
             $this->faturamentos = $faturamentos;
-            print nl2br("Padaria Registrada");
+            print nl2br("\n"."Padaria Registrada");
         }
 
         public function Get_nome(){return $this->nome;}
